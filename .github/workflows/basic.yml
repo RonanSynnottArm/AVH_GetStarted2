@@ -37,8 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
-      contents: write
-      issues: write
+      contents: read
     outputs:
       avhresult: ${{ steps.avh.conclusion }}
       testbadge: ${{ steps.avh.outputs.badge }}
